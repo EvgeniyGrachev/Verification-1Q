@@ -3,3 +3,15 @@
 ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
 */
 
+// Возвращает массив из size элементов, заполненных строками
+
+string[] GetArray(int size)
+{
+    string[] res = new string[size];
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write("Введите строку любой длинны: ");
+        res[i] = Console.ReadLine() ?? "";
+    }
+    return res;
+}
