@@ -3,6 +3,16 @@
 ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
 */
 
+//////////////////////////////////////////////////////////////////////////////////
+
+Console.Clear();
+string[] array = GetArray(4);
+string[] newArray = GetNewArray(array);
+
+Console.WriteLine($"[\"{String.Join("\", \"", array)}\"] -> [\"{String.Join("\", \"", newArray)}\"]");
+
+//////////////////////////////////////////////////////////////////////////////////
+
 // Возвращает массив из size элементов, заполненных строками
 
 string[] GetArray(int size)
