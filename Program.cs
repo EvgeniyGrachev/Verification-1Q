@@ -15,3 +15,17 @@ string[] GetArray(int size)
     }
     return res;
 }
+
+// Возвращает массив с элементами, длинна которых меньше либо равна 3 символа
+
+string[] GetNewArray(string[] ar)
+{
+    string[] newAr = new string[ar.Length];
+    for (int i = 0; i < ar.Length; i++)
+    {
+        if (ar[i].Length <= 3)
+            newAr[i] = ar[i];
+    }
+    newAr = (from word in newAr where word != null select word).ToArray();
+    return newAr;
+}
